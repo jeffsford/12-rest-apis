@@ -32,10 +32,10 @@
         <a href="{{html_url}}" target="_blank">
           <h3>{{}}</h3>
         </a>
-        <p>Description: {{}}</p>
-        <p>Language: {{}}</p>
-        <p>Created: {{}}</p>
-        <p>Last updated: {{}}</p>
+        <p>Description: {{description}}</p>
+        <p>Language: {{language}}</p>
+        <p>Created: {{created}}</p>
+        <p>Last updated: {{last_updated}}</p>
         {{#if watchers_count}}
           <p>{{watchers_count}} watching this repo</p>
         {{/if}}
@@ -107,7 +107,9 @@
     <!-- Script files for the Article resource: -->
     <script src="/scripts/models/article.js"></script>
     <script src="/scripts/models/repo.js"></script>
+    <script src="/scripts/views/adminView.js"></script>
     <script src="/scripts/views/articleView.js"></script>
+    <script src="/scripts/views/newArticle.js"></script>
     <script src="/scripts/views/repoView.js"></script>
     <script src="/scripts/controllers/articleController.js"></script>
     <script src="/scripts/controllers/aboutController.js"></script>
